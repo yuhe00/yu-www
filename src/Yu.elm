@@ -35,7 +35,7 @@ init location =
     let
         model =
             { route = Routes.parseRoute location
-            , resolution = Size 100 100
+            , resolution = Size 1000 1000
             , time = 0
             , data = Nothing
             , quote = Nothing
