@@ -49,8 +49,8 @@ module.exports = {
       filename: 'index.html'
     }),
     new CopyWebpackPlugin([{
-      from: './public/favicon.ico',
-      to: './favicon.ico'
+      from: './public',
+      to: './'
     }])
   ],
 
