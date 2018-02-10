@@ -188,7 +188,7 @@ view resolution time quote available =
                 , Html.span [ A.class "home-about-em" ] [ Html.text "snapshot" ]
                 , Html.text " of the continuum of our common consciousness? Or a "
                 , Html.span [ A.class "home-about-em" ] [ Html.text "peek" ]
-                , Html.text " into the core fabric of our existence? No clue; I just like to make stuff 😎"
+                , Html.text " into the fabric of existence itself? No clue; I just like to make stuff 😎"
                 ]
             , Html.p
                 [ A.style [ ( "font-size", "0.8em" ), ( "color", "#e88" ) ] ]
