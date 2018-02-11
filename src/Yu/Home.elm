@@ -183,7 +183,7 @@ view resolution time quote available =
                 ]
             , Html.p
                 [ A.style [ ( "font-size", "0.8em" ), ( "color", "#e88" ) ] ]
-                [ Html.text "Equipped with a broad set of skills in a wide range of fields, including computer graphics, mathematics, AI, hardware, manufacturing and game design, I enjoy working on creating immersive, memorable experiences that make an impact." ]
+                [ Html.text "Equipped with a broad set of skills in a wide range of fields, including computer graphics, mathematics, AI, hardware, manufacturing and game design, I enjoy working with passionate people to create immersive, memorable experiences that make an impact." ]
             , Html.p
                 [ A.style [ ( "font-size", "0.8em" ), ( "color", "#e88" ) ] ]
                 [ Html.text "Currently "
