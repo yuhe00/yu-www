@@ -1,4 +1,4 @@
-IMAGE_TAG=eu.gcr.io/148119/yu-www:$(shell git log --pretty=format:'%h' -n 1)
+IMAGE_TAG=eu.gcr.io/inconspicuous-148119/yu-www:$(shell git log --pretty=format:'%h' -n 1)
 
 all: dist
 
