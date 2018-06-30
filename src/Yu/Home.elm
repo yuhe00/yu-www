@@ -202,32 +202,32 @@ view resolution time quote available =
                     [ Html.li []
                         [ Html.a
                             [ A.href "https://www.linkedin.com/in/yuhe00", A.class "icon" ]
-                            [ Html.span [ A.class "fa fa-linkedin", A.attribute "aria-hidden" "true" ] [] ]
+                            [ Html.span [ A.class "fab fa-linkedin", A.attribute "aria-hidden" "true" ] [] ]
                         ]
                     , Html.li []
                         [ Html.a
                             [ A.href "https://github.com/yuhe00", A.class "icon" ]
-                            [ Html.span [ A.class "fa fa-github", A.attribute "aria-hidden" "true" ] [] ]
+                            [ Html.span [ A.class "fab fa-github", A.attribute "aria-hidden" "true" ] [] ]
                         ]
                     , Html.li []
                         [ Html.a
                             [ A.href "https://instagram.com/yuhe7581", A.class "icon" ]
-                            [ Html.span [ A.class "fa fa-instagram", A.attribute "aria-hidden" "true" ] [] ]
+                            [ Html.span [ A.class "fab fa-instagram", A.attribute "aria-hidden" "true" ] [] ]
                         ]
                     , Html.li []
                         [ Html.a
                             [ A.href "https://twitter.com/yuhe00", A.class "icon" ]
-                            [ Html.span [ A.class "fa fa-twitter", A.attribute "aria-hidden" "true" ] [] ]
+                            [ Html.span [ A.class "fab fa-twitter", A.attribute "aria-hidden" "true" ] [] ]
                         ]
                     , Html.li []
                         [ Html.a
                             [ A.href "https://inconspicuous.itch.io", A.class "icon" ]
-                            [ Html.span [ A.class "fa fa-gamepad", A.attribute "aria-hidden" "true" ] [] ]
+                            [ Html.span [ A.class "fas fa-gamepad", A.attribute "aria-hidden" "true" ] [] ]
                         ]
                     , Html.li []
                         [ Html.a
                             [ A.href "https://www.youtube.com/channel/UCBh4RZgQqEbfvO5KvDV0Hzw", A.class "icon" ]
-                            [ Html.span [ A.class "fa fa-youtube", A.attribute "aria-hidden" "true" ] [] ]
+                            [ Html.span [ A.class "fab fa-youtube", A.attribute "aria-hidden" "true" ] [] ]
                         ]
                     ]
                 ]
