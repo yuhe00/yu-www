@@ -8,12 +8,13 @@ yu-www
 ## Setup & Develop
 
 ```
-npm install && npm start
+make
+npm start
 ```
 
 ## Build & Deploy
 
 ```
-npm run build && ./deploy
+make deploy
 ```
 
