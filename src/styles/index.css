@@ -2,19 +2,22 @@
   box-sizing: border-box;
 }
 
-html, body, #root, .app {
-    height: 100%;
+html,
+body,
+#root,
+.app {
+  height: 100%;
 }
 
 body {
   color: #ecc;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1.4rem;
 }
 
 .home-container {
-    display: flex;
-    height: 100%;
+  display: flex;
+  height: 100%;
 }
 
 .shader-canvas {
@@ -31,9 +34,15 @@ body {
 }
 
 @media (max-width: 600px) {
-    html, body, #root, .app, .home-container, .shader-canvas, .home-splash-panel {
-        height: auto;
-    }
+  html,
+  body,
+  #root,
+  .app,
+  .home-container,
+  .shader-canvas,
+  .home-splash-panel {
+    height: auto;
+  }
 }
 
 em {
@@ -68,7 +77,7 @@ ul.links li {
 }
 
 ul.links li:not(:first-child):before {
-  content: '|';
+  content: "|";
   position: absolute;
   left: -1.3rem;
   top: -0.3rem;
@@ -109,9 +118,9 @@ a:hover {
 }
 
 @media (max-width: 600px) {
-    #side-panel {
-        overflow-y: auto;
-    }
+  #side-panel {
+    overflow-y: auto;
+  }
 }
 
 .work-panel {
@@ -119,8 +128,8 @@ a:hover {
 }
 
 .home-about-panel {
-    background-color: #9b0048;
-    justify-content: center;
+  background-color: #9b0048;
+  justify-content: center;
 }
 
 .home-about-em {
@@ -130,7 +139,8 @@ a:hover {
   line-height: 1.4;
 }
 
-.work-available, .work-unavailable {
+.work-available,
+.work-unavailable {
   border-radius: 3px;
   font-size: 1.1em;
   padding: 2px 8px;
@@ -155,8 +165,8 @@ a:hover {
   }
 
   #side-panel {
-      padding: 2rem;
-      padding-top: 5rem;
+    padding: 2rem;
+    padding-top: 5rem;
     font-size: 1.15rem;
     min-width: initial;
     width: 100%;
@@ -168,96 +178,96 @@ a:hover {
 }
 
 .page {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 2em;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
 }
 
 /* Work panel */
 
 .work-em {
-    display: inline-block;
-    background-color: #fff157;
-    color: #c22;
-    padding: 0 4px;
-    line-height: 1.4;
+  display: inline-block;
+  background-color: #fff157;
+  color: #c22;
+  padding: 0 4px;
+  line-height: 1.4;
 }
 
 .work-panel-projects {
-    padding: 0;
-    margin: 0;
-    padding-bottom: 3rem;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 3rem;
 }
 
 .work-panel-project {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .work-panel-project div {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .work-panel-project:nth-child(2n) {
-    display: flex;
-    flex-direction: row-reverse;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .work-panel-project img {
-    min-width: 100px;
-    min-height: 100px;
-    width: 100px;
-    height: 100px;
-    background-color: #ccc;
-    border-radius: 50%;
-    margin-right: 0;
-    margin-left: 1rem;
-    border: 3px solid #fff;
+  min-width: 100px;
+  min-height: 100px;
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-right: 0;
+  margin-left: 1rem;
+  border: 3px solid #fff;
 }
 
 .work-panel-project:nth-child(2n) img {
-    margin-left: 0;
-    margin-right: 1rem;
+  margin-left: 0;
+  margin-right: 1rem;
 }
 
 .work-panel-project div p {
-    margin-top: 0.5rem;
-    font-size: 1.2rem;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
 }
 
 .work-panel-project div.small {
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
 }
 
 .project-link {
-    margin-left: 0.5em;
-    font-size: 0.9rem;
-    border-bottom: 0;
+  margin-left: 0.5em;
+  font-size: 0.9rem;
+  border-bottom: 0;
 }
 
 .home-about-work-link {
-    position: absolute;
-    top: 3em;
-    right: 1.5em;
+  position: absolute;
+  top: 3em;
+  right: 1.5em;
 }
 
 @media (max-width: 600px) {
-    .home-about-work-link {
-        top: 2em;
-        right: 1.5em;
-    }
+  .home-about-work-link {
+    top: 2em;
+    right: 1.5em;
+  }
 }
 
 .work-footer {
-    text-align: center;
-    margin-bottom: 6rem;
-    padding-bottom: 6rem;
+  text-align: center;
+  margin-bottom: 6rem;
+  padding-bottom: 6rem;
 }
