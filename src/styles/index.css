@@ -146,12 +146,12 @@ a:hover {
   padding: 2px 8px;
   margin: 0 2px;
   background-color: #0a0;
-  color: #cfc;
+  color: #fff;
 }
 
 .work-unavailable {
   background-color: #600;
-  color: #c22;
+  color: #fff;
 }
 
 @media (max-width: 600px) {
