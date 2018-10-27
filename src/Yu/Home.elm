@@ -14,7 +14,7 @@ viewSidePanelAbout quote available =
         ]
         [ Html.a
             [ A.class "home-about-work-link"
-            , A.href "/work"
+            , A.href "/work#side-panel"
             ]
             [ Html.text "Work »" ]
         , Html.p

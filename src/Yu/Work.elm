@@ -189,7 +189,7 @@ viewSidePanelWork quote =
             , Html.br [] []
             , Html.br [] []
             , Html.a
-                [ A.href "/" ]
+                [ A.href "/#side-panel" ]
                 [ Html.text "« Back" ]
             ]
         ]
