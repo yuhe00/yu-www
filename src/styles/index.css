@@ -98,7 +98,7 @@ a:hover {
   border-color: #fff;
 }
 
-.side-panel {
+#side-panel {
   min-width: 640px;
   width: 30%;
   padding: 6rem 3rem;
@@ -109,7 +109,7 @@ a:hover {
 }
 
 @media (max-width: 600px) {
-    .side-panel {
+    #side-panel {
         overflow-y: auto;
     }
 }
@@ -127,6 +127,7 @@ a:hover {
   background-color: #fff157;
   color: #c22;
   padding: 0 4px;
+  line-height: 1.4;
 }
 
 .work-available, .work-unavailable {
@@ -153,8 +154,9 @@ a:hover {
     height: auto;
   }
 
-  .side-panel {
-    padding: 2rem;
+  #side-panel {
+      padding: 2rem;
+      padding-top: 5rem;
     font-size: 1.15rem;
     min-width: initial;
     width: 100%;
@@ -175,6 +177,14 @@ a:hover {
 }
 
 /* Work panel */
+
+.work-em {
+    display: inline-block;
+    background-color: #fff157;
+    color: #c22;
+    padding: 0 4px;
+    line-height: 1.4;
+}
 
 .work-panel-projects {
     padding: 0;
@@ -241,7 +251,6 @@ a:hover {
 
 @media (max-width: 600px) {
     .home-about-work-link {
-        position: absolute;
         top: 2em;
         right: 1.5em;
     }

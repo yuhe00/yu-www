@@ -9,7 +9,7 @@ import Yu.Splash as Splash
 viewSidePanelAbout : Maybe String -> Bool -> Html msg
 viewSidePanelAbout quote available =
     Html.div
-        [ A.class "side-panel"
+        [ A.id "side-panel"
         , A.class "home-about-panel"
         ]
         [ Html.a

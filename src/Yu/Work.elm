@@ -137,7 +137,7 @@ viewProject project =
         [ A.class "work-panel-project" ]
         [ Html.div
             []
-            [ Html.span [ A.class "home-about-em" ] [ Html.text project.name ]
+            [ Html.span [ A.class "work-em" ] [ Html.text project.name ]
             , Html.span [] (List.map viewLink project.links)
             , Html.div
                 [ A.class "small"
@@ -164,12 +164,12 @@ viewProjects =
 viewSidePanelWork : Maybe String -> Html msg
 viewSidePanelWork quote =
     Html.div
-        [ A.class "side-panel"
+        [ A.id "side-panel"
         , A.class "work-panel"
         ]
         [ Html.a
             [ A.class "home-about-work-link"
-            , A.href "/"
+            , A.href "/#side-panel"
             ]
             [ Html.text "« Back" ]
         , Html.p
