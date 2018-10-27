@@ -12,6 +12,7 @@ import Task
 import Time
 import Window exposing (Size)
 import Yu.Home as Home
+import Yu.Work as Work
 import Yu.Model exposing (..)
 import Yu.Routes as Routes exposing (Route(..))
 
@@ -115,6 +116,13 @@ view model =
         [ case model.route of
             Home ->
                 Home.view
+                    model.resolution
+                    (Time.inSeconds model.time)
+                    model.quote
+                    (Maybe.map .available model.data |> Maybe.withDefault False)
+
+            Work ->
+                Work.view
                     model.resolution
                     (Time.inSeconds model.time)
                     model.quote

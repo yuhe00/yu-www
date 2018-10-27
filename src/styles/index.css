@@ -7,7 +7,6 @@ html, body, #root, .app {
 }
 
 body {
-  background-color: #9b0048;
   color: #ecc;
   font-family: 'Lato', sans-serif;
   font-size: 1.4rem;
@@ -99,15 +98,29 @@ a:hover {
   border-color: #fff;
 }
 
-.home-about-panel {
-  background-color: #9b0048;
-  min-width: 480px;
+.side-panel {
+  min-width: 640px;
   width: 30%;
-  padding: 0 3rem;
+  padding: 6rem 3rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   position: relative;
+  overflow-y: scroll;
+}
+
+@media (max-width: 600px) {
+    .side-panel {
+        overflow-y: auto;
+    }
+}
+
+.work-panel {
+  background-color: #00489b;
+}
+
+.home-about-panel {
+    background-color: #9b0048;
+    justify-content: center;
 }
 
 .home-about-em {
@@ -137,10 +150,10 @@ a:hover {
   }
 
   .home-splash-panel {
-    height: 400px;
+    height: auto;
   }
 
-  .home-about-panel {
+  .side-panel {
     padding: 2rem;
     font-size: 1.15rem;
     min-width: initial;
@@ -152,9 +165,90 @@ a:hover {
   }
 }
 
-.test {
+.page {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+/* Work panel */
+
+.work-panel-projects {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 3rem;
+}
+
+.work-panel-project {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work-panel-project div {
+    flex-grow: 1;
+}
+
+.work-panel-project:nth-child(2n) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.work-panel-project img {
+    min-width: 100px;
+    min-height: 100px;
     width: 100px;
-    background-color: #fff;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 0;
+    margin-left: 1rem;
+    border: 3px solid #fff;
+}
+
+.work-panel-project:nth-child(2n) img {
+    margin-left: 0;
+    margin-right: 1rem;
+}
+
+.work-panel-project div p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.work-panel-project div.small {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.project-link {
+    margin-left: 0.5em;
+    font-size: 0.9rem;
+    border-bottom: 0;
+}
+
+.home-about-work-link {
     position: absolute;
-    bottom: 0;
+    top: 3em;
+    right: 1.5em;
+}
+
+@media (max-width: 600px) {
+    .home-about-work-link {
+        position: absolute;
+        top: 2em;
+        right: 1.5em;
+    }
+}
+
+.work-footer {
+    text-align: center;
+    margin-bottom: 6rem;
+    padding-bottom: 6rem;
 }
