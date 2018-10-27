@@ -12,5 +12,5 @@ docker: dist Dockerfile
 node_modules: package.json
 	npm install
 
-dist: node_modules public/** src/** elm-stuff/** *.js *.json
+dist: $(shell find src -type f) $(shell find files -type f) $(shell find elm-stuff -type f) node_modules *.js *.json
 	npm run build
