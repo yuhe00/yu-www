@@ -100,18 +100,18 @@ projects =
       , image = "/images/engineerium.png"
       , links = [ ( "Web", "https://www.engineerium.no" ) ]
       }
-    -- , { name = "Det Norske Teatret"
-    --   , client = "Expology, Det Norske Teatret"
-    --   , shortDescription = "An installation with miniature scenes. Tobii eye tracking tracks the position of the visitor's eyes and lights up text on the wall."
-    --   , image = ""
-    --   , links = []
-    --   }
-    -- , { name = "Energy Lab Hydro LEDs"
-    --   , client = "Expology, Aker Solutions"
-    --   , shortDescription = "Renewed electronics setup and developed more responsive and user-friendly LED display."
-    --   , image = "/images/engineerium-leds.png"
-    --   , links = []
-    --   }
+    , { name = "Det Norske Teatret"
+      , client = "Expology, Det Norske Teatret"
+      , shortDescription = "An installation with miniature scenes. Uses eye tracking to light up text on the wall based on where people are looking."
+      , image = "/images/dnt.png"
+      , links = []
+      }
+    , { name = "Waveshift"
+      , client = "Inconspicuous Creations"
+      , shortDescription = "A game entry for the yearly 'NM i Gameplay'-competition. The theme was 'arcade'."
+      , image = "/images/waveshift.png"
+      , links = [ ( "YouTube", "https://www.youtube.com/watch?v=jVQXexgVDfo" ) ]
+      }
     ]
 
 
