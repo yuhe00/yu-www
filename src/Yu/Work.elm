@@ -110,7 +110,7 @@ projects =
       , client = "Inconspicuous Creations"
       , shortDescription = "A game entry for the yearly 'NM i Gameplay'-competition. The theme was 'arcade'."
       , image = "/images/waveshift.png"
-      , links = [ ( "YouTube", "https://www.youtube.com/watch?v=jVQXexgVDfo" ) ]
+      , links = [ ( "YouTube", "https://www.youtube.com/watch?v=vh1-oQncMl8" ) ]
       }
     ]
 
