@@ -31,6 +31,12 @@ projects =
       , image = "/images/heroes-in-the-fast-lane.png"
       , links = [ ( "YouTube", "https://www.youtube.com/watch?v=WDQc3If_3H4" ) ]
       }
+    , { name = "Santa's Workshop"
+      , client = "Inconspicuous Creations"
+      , shortDescription = "Christmas-themed 'idle'-game for the browser."
+      , image = "/images/santas-workshop.png"
+      , links = [ ( "Web", "https://yuhe00.github.io/santas-workshop" ) ]
+      }
     , { name = "UE4 customizations for broadcast"
       , client = "The Future Group"
       , shortDescription = "Worked closely with TV/media-creators and VFX artists to make Unreal Engine 4 more suitable for TV- and broadcast-workflow."
