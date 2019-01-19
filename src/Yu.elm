@@ -20,7 +20,7 @@ import Yu.Routes as Routes exposing (Route(..))
 getData : Http.Request Data
 getData =
     Http.get
-        "https://gist.githubusercontent.com/yuhe00/39e73c95492dcca1446f6f3c79c40d80/raw/yu-www-data.json"
+        "https://gist.githubusercontent.com/yuhe00/39e73c95492dcca1446f6f3c79c40d80/raw"
         decodeData
 
 
