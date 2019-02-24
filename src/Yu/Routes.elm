@@ -1,7 +1,8 @@
-module Yu.Routes exposing (..)
+module Yu.Routes exposing (Route(..), parseRoute, routeParser, toString)
 
-import Navigation exposing (Location)
-import UrlParser as Parser exposing (Parser, (</>), (<?>), top, s, stringParam)
+import Browser.Navigation exposing (Key)
+import Url exposing (Url)
+import Url.Parser as Parser exposing (Parser)
 
 
 type Route
@@ -10,11 +11,11 @@ type Route
     | NotFound
 
 
-route : Parser (Route -> a) a
-route =
+routeParser : Parser (Route -> a) a
+routeParser =
     Parser.oneOf
-        [ Parser.map Home top
-        , Parser.map Work (s "work")
+        [ Parser.map Home Parser.top
+        , Parser.map Work (Parser.s "work")
         ]
 
 
@@ -31,7 +32,7 @@ toString route =
             "/404"
 
 
-parseRoute : Location -> Route
-parseRoute location =
-    Parser.parsePath route location
+parseRoute : Url -> Route
+parseRoute url =
+    Parser.parse routeParser url
         |> Maybe.withDefault NotFound

@@ -1,9 +1,9 @@
-module Yu.Home exposing (..)
+module Yu.Home exposing (view, viewSidePanelAbout)
 
 import Html exposing (Html)
 import Html.Attributes as A
-import Window exposing (Size)
 import Yu.Splash as Splash
+import Yu.Types exposing (Size)
 
 
 viewSidePanelAbout : Maybe String -> Bool -> Html msg
@@ -25,9 +25,9 @@ viewSidePanelAbout quote available =
             , Html.span
                 [ A.class "small" ]
                 (case quote of
-                    Just quote ->
+                    Just quote_ ->
                         [ Html.text "\""
-                        , Html.text quote
+                        , Html.text quote_
                         , Html.text "\""
                         ]
 
@@ -46,10 +46,14 @@ viewSidePanelAbout quote available =
             , Html.text " into the fabric of existence itself? No clue; I just like to make stuff 😎"
             ]
         , Html.p
-            [ A.style [ ( "font-size", "0.8em" ), ( "color", "#e88" ) ] ]
+            [ A.style "font-size" "0.8em"
+            , A.style "color" "#e88"
+            ]
             [ Html.text "Equipped with a broad set of skills in a wide range of fields, including computer graphics, mathematics, AI, hardware, manufacturing and game design, I enjoy working with passionate people to create immersive, memorable experiences that make an impact." ]
         , Html.p
-            [ A.style [ ( "font-size", "0.8em" ), ( "color", "#e88" ) ] ]
+            [ A.style "font-size" "0.8em"
+            , A.style "color" "#e88"
+            ]
             [ Html.text "Working on an interesting project? "
             , Html.a
                 [ A.class "no-underline"

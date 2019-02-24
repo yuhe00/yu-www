@@ -1,11 +1,11 @@
-module Yu.Splash exposing (..)
+module Yu.Splash exposing (Uniforms, Vertex, fragmentShader, mesh, vertexShader, view)
 
 import Html exposing (Html)
 import Html.Attributes as A
-import Math.Vector2 as Vec2 exposing (vec2, Vec2)
-import Math.Vector3 as Vec3 exposing (vec3, Vec3)
+import Math.Vector2 as Vec2 exposing (Vec2, vec2)
+import Math.Vector3 as Vec3 exposing (Vec3, vec3)
 import WebGL exposing (Mesh, Shader)
-import Window exposing (Size)
+import Yu.Types exposing (Size)
 
 
 type alias Vertex =

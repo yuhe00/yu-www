@@ -1,16 +1,17 @@
 module Main exposing (..)
 
-import Navigation
+import Browser
 import Yu exposing (..)
 import Yu.Model exposing (..)
 
 
-main : Program Never Model Msg
+main : Program Flags Model Msg
 main =
-    Navigation.program
-        OnLocationChange
+    Browser.application
         { init = init
         , update = update
         , subscriptions = subscriptions
         , view = view
+        , onUrlChange = OnLocationChange
+        , onUrlRequest = OnUrlRequest
         }

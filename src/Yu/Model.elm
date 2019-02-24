@@ -1,29 +1,38 @@
-module Yu.Model exposing (..)
+module Yu.Model exposing (Data, Flags, Model, Msg(..))
 
+import Browser exposing (UrlRequest)
+import Browser.Navigation exposing (Key)
 import Http
-import Navigation exposing (Location)
-import Time exposing (Time)
-import Window exposing (Size)
+import Url exposing (Url)
 import Yu.Routes exposing (Route(..), parseRoute)
+import Yu.Types exposing (Size)
+
+
+type alias Flags =
+    {}
 
 
 type alias Model =
-    { route : Route
+    { key : Key
+    , route : Route
     , resolution : Size
-    , time : Time
+    , time : Float -- Time in millis
     , data : Maybe Data
     , quote : Maybe String
     }
+
 
 type alias Data =
     { quotes : List String
     , available : Bool
     }
 
+
 type Msg
-    = OnLocationChange Location
+    = OnLocationChange Url
+    | OnUrlRequest UrlRequest
     | OnResolutionChange Size
     | GotoRoute Route
-    | UpdateTime Time
+    | UpdateTime Float
     | UpdateData (Result Http.Error Data)
     | SetQuote (Maybe String)

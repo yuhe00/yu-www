@@ -31,7 +31,7 @@ module.exports = {
       use: [
         process.env.NODE_ENV === 'production' ?
         'elm-webpack-loader' :
-        'elm-webpack-loader?verbose=true&warn=true&debug=true'
+        'elm-webpack-loader?verbose=true&debug=true'
       ]
     }, {
       test: /.css$/,

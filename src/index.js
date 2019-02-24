@@ -3,6 +3,6 @@
 require('./styles/reset.css');
 require('./styles/index.css');
 
-const Elm = require('./Main');
+import { Elm } from './Main';
 
-const main = Elm.Main.embed(document.getElementById('root'));
+Elm.Main.init(document.getElementById('root'));

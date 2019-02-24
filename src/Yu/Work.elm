@@ -1,11 +1,11 @@
-module Yu.Work exposing (..)
+module Yu.Work exposing (Project, projects, view, viewLink, viewProject, viewProjects, viewSidePanelWork)
 
 import Html exposing (Html)
 import Html.Attributes as A
-import Math.Vector2 as Vec2 exposing (vec2, Vec2)
-import Math.Vector3 as Vec3 exposing (vec3, Vec3)
-import Window exposing (Size)
+import Math.Vector2 as Vec2 exposing (Vec2, vec2)
+import Math.Vector3 as Vec3 exposing (Vec3, vec3)
 import Yu.Splash as Splash
+import Yu.Types exposing (Size)
 
 
 type alias Project =
@@ -132,9 +132,9 @@ viewLink ( name, url ) =
                 _ ->
                     "fas fa-external-link-alt"
     in
-        Html.a
-            [ A.class "project-link", A.href url ]
-            [ Html.i [ A.class faName ] [] ]
+    Html.a
+        [ A.class "project-link", A.href url ]
+        [ Html.i [ A.class faName ] [] ]
 
 
 viewProject : Project -> Html msg
@@ -147,14 +147,16 @@ viewProject project =
             , Html.span [] (List.map viewLink project.links)
             , Html.div
                 [ A.class "small"
-                , A.style [ ( "font-size", "0.7em" ), ( "color", "#88e" ) ]
+                , A.style "font-size" "0.7em"
+                , A.style "color" "#88e"
                 ]
                 [ Html.text project.client ]
             , Html.p [] [ Html.text project.shortDescription ]
-              -- , Html.p [ A.class "small" ]
-              --     ((Html.text "In collaboration with: ")
-              --         :: (List.map Html.text [ project.client ])
-              --     )
+
+            -- , Html.p [ A.class "small" ]
+            --     ((Html.text "In collaboration with: ")
+            --         :: (List.map Html.text [ project.client ])
+            --     )
             ]
         , Html.img [ A.src project.image ] []
         ]
