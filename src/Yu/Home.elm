@@ -50,14 +50,15 @@ viewSidePanelAbout quote available =
             [ Html.text "Equipped with a broad set of skills in a wide range of fields, including computer graphics, mathematics, AI, hardware, manufacturing and game design, I enjoy working with passionate people to create immersive, memorable experiences that make an impact." ]
         , Html.p
             [ A.style [ ( "font-size", "0.8em" ), ( "color", "#e88" ) ] ]
-            [ Html.text "Currently "
-            , case available of
-                True ->
-                    Html.span [ A.class "work-available" ] [ Html.text "available" ]
-
-                False ->
-                    Html.span [ A.class "work-unavailable" ] [ Html.text "unavailable" ]
-            , Html.text " for contract work."
+            [ Html.text "Working on an interesting project? "
+            , Html.a
+                [ A.class "no-underline"
+                , A.href "mailto:yu.he@inconspicuous.no"
+                ]
+                [ Html.span
+                    [ A.class "work-available" ]
+                    [ Html.text "Get in touch!" ]
+                ]
             ]
         , Html.p
             []
@@ -99,8 +100,18 @@ viewSidePanelAbout quote available =
             []
             [ Html.ul
                 [ A.class "links" ]
-                [ Html.li [] [ Html.a [ A.href "/files/cv.pdf", A.target "_blank" ] [ Html.text "CV" ] ]
-                , Html.li [] [ Html.a [ A.href "mailto:yu.he@inconspicuous.no" ] [ Html.text "yu.he@inconspicuous.no" ] ]
+                [ Html.li
+                    []
+                    [ Html.a
+                        [ A.href "/files/cv.pdf", A.target "_blank" ]
+                        [ Html.text "CV" ]
+                    ]
+                , Html.li
+                    []
+                    [ Html.a
+                        [ A.href "mailto:yu.he@inconspicuous.no" ]
+                        [ Html.text "yu.he@inconspicuous.no" ]
+                    ]
                 ]
             ]
         ]

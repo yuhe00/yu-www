@@ -57,6 +57,7 @@ p {
 }
 
 p:last-child {
+  margin-top: -0.5em;
   margin-bottom: 0;
 }
 
@@ -68,6 +69,7 @@ ul {
 ul.links {
   list-style-type: circle;
   margin-left: 0;
+  margin-top: 0.5em;
 }
 
 ul.links li {
@@ -105,6 +107,11 @@ a {
 a:hover {
   color: #fff;
   border-color: #fff;
+}
+
+a.no-underline {
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 
 #side-panel {
@@ -147,6 +154,7 @@ a:hover {
   margin: 0 2px;
   background-color: #0a0;
   color: #fff;
+  display: inline-block;
 }
 
 .work-unavailable {
