@@ -70,6 +70,12 @@ projects =
       , image = "/images/floq.png"
       , links = []
       }
+    , { name = "Folq"
+      , client = "Blank"
+      , shortDescription = "Helped develop the first iteration of Folq - an online portal for finding and hiring independent IT consultants in Norway."
+      , image = "/images/folq.png"
+      , links = [ ( "Web", "https://www.folq.no" ) ]
+      }
     , { name = "Storebrand Pension"
       , client = "Blank, Storebrand"
       , shortDescription = "Frontend web development on a variety of forms and wizards, with focus on user-friendliness and security."
@@ -117,6 +123,18 @@ projects =
       , shortDescription = "A game entry for the yearly 'NM i Gameplay'-competition. The theme was 'arcade'."
       , image = "/images/waveshift.png"
       , links = [ ( "YouTube", "https://www.youtube.com/watch?v=vh1-oQncMl8" ) ]
+      }
+    , { name = "Chemotherapy"
+      , client = "Logic Interactive"
+      , shortDescription = "A game where you use your hands to mix chemicals and cure cancer. Supports controls by Leap Motion."
+      , image = "/images/kfchemo.png"
+      , links = [ ( "Web", "https://www.kreftforeningen.no" ) ]
+      }
+    , { name = "Targeted Medicine / DNA"
+      , client = "Logic Interactive"
+      , shortDescription = "A game where you find mutations in DNA and cure them by administering the right kind of medicine. The physical structure consists of 2x ~900 controllable RGB LEDs."
+      , image = "/images/kfdna.png"
+      , links = [ ( "Web", "https://www.kreftforeningen.no" ) ]
       }
     ]
 
