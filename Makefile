@@ -7,7 +7,7 @@ deploy: docker
 
 docker: dist Dockerfile
 	docker build -t ${IMAGE_TAG} .
-	gcloud docker -- push ${IMAGE_TAG}
+	docker push ${IMAGE_TAG}
 
 node_modules: package.json
 	npm install
