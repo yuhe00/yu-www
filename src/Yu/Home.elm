@@ -116,6 +116,10 @@ viewSidePanelAbout quote available =
                         [ A.href "mailto:yu.he@inconspicuous.no" ]
                         [ Html.text "yu.he@inconspicuous.no" ]
                     ]
+                , Html.li
+                    []
+                    [ Html.text "Oslo, Norway"
+                    ]
                 ]
             ]
         ]
