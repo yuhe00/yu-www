@@ -5,6 +5,13 @@ yu-www
 
 - `npm`
 
+Install NVM and use `lts/erbium` branch.
+
+```
+$ node --version
+v12.22.12
+```
+
 ## Setup & Develop
 
 ```
